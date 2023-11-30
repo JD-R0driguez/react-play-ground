@@ -1,30 +1,54 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Logo from './images/logo-react.svg';
+import './assets/styles.css';
+import Header from './components/Header';
+import Footer from './components/Footer';
 
 
-const MyNav = () =>{
-    return(
-        <nav>
-            <img src={Logo} alt="react logo" width="50px" height="auto"/>
-            <h1>Fun Facts About React</h1>
-            <ul>
-                <li>Component-Based Architecture</li>
-                <li>Virtual DOM for Performance Optimization</li>  
-                <li>Developed by Facebook</li>
-                <li>JSX - JavaScript Syntax Extension</li>
-                <li>React Native for Cross-Platform Development</li>   
-            </ul>
-        </nav>
+
+const Page = ()=>{
+    return (
+        <>
+            <Header/>
+            <Body/>
+        </>
     )
 }
-ReactDOM.render(<MyNav/>, document.getElementById('root'));
-// const app_root =  ReactDOM.createRoot(document.getElementById('root'));
 
-// app_root.render(
-//     <div>
-//         <MyNav/>
-//         {/* <MySecondList/> */}
-//     </div>
-// );
+function Body(){
+    return (
+        <body>
+            <h1>Fun Facts About React</h1>
+            <ReactFacts/>
+            <h1>Why do I want to lear React</h1>
+            <WhyReact/>
+            <Footer/>
+        </body>
+    )
+}
+
+function ReactFacts(){
+    return(
+        <ul className="sub-list">
+            <li>Component-Based Architecture</li>
+            <li>Virtual DOM for Performance Optimization</li>  
+            <li>Developed by Facebook</li>
+            <li>JSX - JavaScript Syntax Extension</li>
+            <li>React Native for Cross-Platform Development</li> 
+        </ul>
+    )
+}
+
+const WhyReact = () =>{
+    return(
+        <ul className="sub-list">
+            <li>Enables easier creation of interactive user interfaces.</li>
+            <li>Extensive community support and rich documentation.</li>
+            <li>Enhances career prospects due to its industry prevalence.</li>
+        </ul>
+    )
+}
+
+
+ReactDOM.render(<Page/>, document.getElementById('root'));
 
