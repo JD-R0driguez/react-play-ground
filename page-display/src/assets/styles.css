@@ -1,11 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Poppins:ital,wght@0,700;1,400;1,800&family=Roboto:wght@100;300;500&display=swap');
 
-* {
+*:not(ul) {
     margin: 0;
     padding: 0;
     font-family: 'Inter', sans-serif;
     font-family: 'Poppins', sans-serif;
     font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background: #282D35;
 }
 
 nav{
@@ -50,4 +54,35 @@ nav{
     cursor: pointer;
 }
 
+h1{
+    padding: 3rem 1.5rem;
+    font-size: 39px;
+    font-weight: 700;
+    line-height: 47px;
+    letter-spacing: -0.05em;
+    text-align: left;
+    color: #FFFFFF;
+}
 
+ul{
+    margin-top: 0px;
+    width: 390px;
+    margin-left: 30px;
+}
+
+li{
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+    padding-left: 8px;
+    margin-bottom: 10px;
+    color: #FFFFFF;
+}
+
+li::marker {
+    font-size: 30px;
+    color:#61DAFB;
+;
+  }

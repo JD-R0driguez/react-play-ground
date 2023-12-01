@@ -1,8 +1,10 @@
 import React from 'react';
+import IconBack from '../assets/react-background.svg'
+
 
 const Main = ()=>{
     return (
-        <>
+        <div className='main-body'>
             <h1>Fun facts about React</h1>
             <ul>
                 <li>Was first released in 2013</li>
@@ -11,7 +13,8 @@ const Main = ()=>{
                 <li>Is maintained by Facebook</li>
                 <li>Powers thousands of enterprise apps, including mobile apps</li>
             </ul>
-        </>
+            <img src={IconBack} className='react-icon' alt='react-icon'/>
+        </div>
     )
 }
 
