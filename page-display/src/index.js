@@ -1,12 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import Header from './components/Header';
+import Main from './components/Main';
+import './styles.css';
 
 
 
-function HelloText (){
+
+function Page (){
     return(
-        <h1>Testing setup</h1>
+        <>
+            <Header/>
+            <Main/>
+        </>
     )
 }
 
-ReactDOM.render(<HelloText/>, document.getElementById('root'));
+ReactDOM.render(<Page/>, document.getElementById('root'));

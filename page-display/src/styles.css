@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Poppins:ital,wght@0,700;1,400;1,800&family=Roboto:wght@100;300;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+nav{
+    padding: 0 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 91px;
+    background: #21222A;
+}
+
+.icon-box{
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}
+
+.icon-text{
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 27px;
+    letter-spacing: -0.05em;
+    text-align: left;
+    color: #339af0;
+}
+
+.react-icon{
+    height: 34px;
+}
+
+.header-sub-text{
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: right;
+    color: #DEEBF8;
+}
+
+.header-sub-text:hover{
+    color: #b8d6ea;
+    cursor: pointer;
+}
+
+
