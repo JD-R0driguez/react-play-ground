@@ -13,7 +13,7 @@ const Main = ()=>{
                 <li>Is maintained by Facebook</li>
                 <li>Powers thousands of enterprise apps, including mobile apps</li>
             </ul>
-            <img src={IconBack} className='react-icon' alt='react-icon'/>
+            <img src={IconBack} className='icon-back' alt='react-icon'/>
         </div>
     )
 }

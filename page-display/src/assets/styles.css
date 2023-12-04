@@ -64,10 +64,15 @@ h1{
     color: #FFFFFF;
 }
 
+.main-body{
+    position: relative;
+}
+
 ul{
     margin-top: 0px;
-    width: 390px;
     margin-left: 30px;
+    margin-right: 40px;
+    min-width: 390px;  
 }
 
 li{
@@ -83,6 +88,15 @@ li{
 
 li::marker {
     font-size: 30px;
-    color:#61DAFB;
-;
-  }
+    color:#339af0;
+
+}
+
+.icon-back{
+    opacity: 0.6;
+    position: absolute;
+    width: 30%;
+    right: 0px;
+    top: 40%;
+    z-index: -1;
+}
