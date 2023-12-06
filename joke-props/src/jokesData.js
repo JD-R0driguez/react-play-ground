@@ -1,6 +1,6 @@
 export default[
   {
-    cas: "Why don't scientists trust atoms?",
+    setup: "Why don't scientists trust atoms?",
     punchline: "Because they make up everything!"
   },
   {
