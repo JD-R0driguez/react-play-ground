@@ -20,7 +20,6 @@ function App() {
       price={136}
       people="person"
     />
-
     </>
   );
 }
