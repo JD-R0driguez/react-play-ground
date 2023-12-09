@@ -2,6 +2,8 @@ import React from 'react';
 import Joke from './Components/Joke'
 
 
+const dataType = 20;
+
 export default function App(){
     return (
         <>
@@ -11,7 +13,7 @@ export default function App(){
             />
             <Joke
                 setup="What do you call fake spaghetti?"
-                punch="An impasta."
+                punch={dataType}
             />
             <Joke
                 setup="Why did the scarecrow win an award?"
