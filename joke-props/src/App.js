@@ -1,32 +1,17 @@
 import React from 'react';
 import Joke from './Components/Joke'
+import JokesData from './jokesData'
 
 
-const dataType = 20;
 
 export default function App(){
+    const jokeList = JokesData.map(joke => (
+        <Joke setup = {joke.setup} punch = {joke.punchline}/>
+    ));
+    console.log(jokeList)
     return (
-        <>
-            <Joke
-                setup="Why don't skeletons fight each other?"
-                punch="They don't have the guts."
-            />
-            <Joke
-                setup="What do you call fake spaghetti?"
-                punch={dataType}
-            />
-            <Joke
-                setup="Why did the scarecrow win an award?"
-                punch="Because he was outstanding in his field."
-            />
-            <Joke
-                setup="Did you hear about the claustrophobic astronaut?" 
-                punch="He just needed a little space."
-            />
-            <Joke
-                setup="How does a penguin build its house?"
-                punch="Igloos it together."
-            />
-        </>
+        <div>
+            {jokeList}
+        </div>
     )
 }
