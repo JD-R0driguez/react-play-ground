@@ -37,5 +37,44 @@ export default [
         },
         location: "Norway",
         openSpots: 3,
-    }
+    },
+    {
+        id: 4,
+        title: "Mastering Culinary Arts",
+        description: "Join our culinary workshop to learn the art of creating mouthwatering dishes from around the world. From knife skills to plating techniques, this is a journey towards becoming a master chef!",
+        price: 150,
+        coverImg: "culinary-arts.jpeg",
+        stats: {
+          rating: 4.9,
+          reviewCount: 15
+        },
+        location: "France",
+        openSpots: 5
+      },
+      {
+        id: 5,
+        title: "Explore Underwater Photography",
+        description: "Dive into the world of underwater photography! Learn the essentials of capturing stunning underwater landscapes and marine life while exploring the mesmerizing beauty beneath the surface.",
+        price: 200,
+        coverImg: "underwater-photography.jpeg",
+        stats: {
+          rating: 4.7,
+          reviewCount: 8
+        },
+        location: "Caribbean",
+        openSpots: 10
+      },
+      {
+        id: 6,
+        title: "Hiking Adventure in the Rockies",
+        description: "Embark on an exhilarating hiking expedition through the stunning Rocky Mountains. Traverse scenic trails, experience breathtaking vistas, and discover the thrill of wilderness.",
+        price: 80,
+        coverImg: "hiking-adventure.jpg",
+        stats: {
+          rating: 4.5,
+          reviewCount: 20
+        },
+        location: "USA",
+        openSpots: 3
+      }
 ]

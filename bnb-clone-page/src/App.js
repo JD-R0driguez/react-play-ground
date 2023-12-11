@@ -3,6 +3,7 @@ import Header from './components/Header/Header'
 import Hero from './components/Hero/Hero'
 import CardData from './carData'
 import Card from './components/Card/Card'
+import './styles.css'
 
 function App() {
   const arrayOfCards = CardData.map(cardItem =>(
@@ -19,7 +20,9 @@ function App() {
     <>
     <Header/>
     <Hero/>
-    {arrayOfCards}
+    <div className='cards-container'>
+      {arrayOfCards}      
+    </div>
     </>
   );
 }
