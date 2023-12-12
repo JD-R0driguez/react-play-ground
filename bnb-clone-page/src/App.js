@@ -1,25 +1,25 @@
 import React from 'react';
 import Header from './components/Header/Header'
 import Hero from './components/Hero/Hero'
+import CardData from './carData'
 import Card from './components/Card/Card'
-import Photo from './assets/image12.png'
-import Rating from './assets/rating.svg'
 
 function App() {
+  const arrayOfCards = CardData.map(cardItem =>(
+    <Card 
+          img={cardItem.coverImg}
+          rating={cardItem.stats.rating}
+          reviewCount={cardItem.stats.reviewCount}
+          location={cardItem.location}
+          subtitle={cardItem.title}
+          price={cardItem.price}
+    />
+  ));
   return (
     <>
     <Header/>
     <Hero/>
-    <Card
-      img={Photo}
-      ratingIcon={Rating}
-      rating={"5.0"}
-      revCount={6}
-      country="USA"
-      subtitle="Life lessons with Katie Zaferes"
-      price={136}
-      people="person"
-    />
+    {arrayOfCards}
     </>
   );
 }
