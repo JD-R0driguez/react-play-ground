@@ -9,6 +9,7 @@
 
 .card{
     margin: 20px 0px;
+    position: relative;
 }
 
 .card-image{
@@ -16,6 +17,16 @@
     height: 235px;
     overflow: hidden;
     border-radius: 9px;
+}
+
+.badge{
+    position: absolute;
+    background-color: aliceblue;
+    font-weight: 600;
+    padding: 1px 8px;
+    border-radius: 3px;
+    top: 10px;
+    left: 10px;
 }
 
 .top-line{
