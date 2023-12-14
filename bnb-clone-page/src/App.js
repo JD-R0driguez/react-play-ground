@@ -8,12 +8,14 @@ import './styles.css'
 function App() {
   const arrayOfCards = CardData.map(cardItem =>(
     <Card 
-          img={cardItem.coverImg}
-          rating={cardItem.stats.rating}
-          reviewCount={cardItem.stats.reviewCount}
-          location={cardItem.location}
-          subtitle={cardItem.title}
-          price={cardItem.price}
+      item = {cardItem}
+          // img={cardItem.coverImg}
+          // rating={cardItem.stats.rating}
+          // reviewCount={cardItem.stats.reviewCount}
+          // location={cardItem.location}
+          // subtitle={cardItem.title}
+          // price={cardItem.price}
+          // spotsAvailable={cardItem.openSpots}
     />
   ));
   return (
