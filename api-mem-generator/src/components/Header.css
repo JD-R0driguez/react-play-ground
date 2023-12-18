@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Karla:ital,wght@0,500;0,700;1,400&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 20px;
+    background: linear-gradient(90deg, #672280 1.18%, #A626D3 100%);
+    color: #ffffff;
+}
+
+.icon-logo{
+    display: flex;
+    gap: 8px; 
+}
+
+h3.text-icon{
+    font-family: 'Karla', sans-serif;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: -0.1em;
+    text-align: left;
+}
+
+img.meme-icon{
+    width: 32px;
+}
+
+H4.right-header-text{
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 15px;
+    letter-spacing: 0em;
+    text-align: right;
+
+}
