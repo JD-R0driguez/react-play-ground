@@ -28,7 +28,10 @@ export default function Meme(){
                     type="submit">Get a new meme image  🖼
                 </button>
             </div>
-            <img src={memeImage} width="300px"/>
+            <div className="image-container">
+                <img className="meme-image" src={memeImage}/>
+            </div>
+            
         </main>
     )
 }
