@@ -3,8 +3,7 @@ import './Card.css'
 import StarIcon from '../../assets/rating.svg'
 
 export default function Card(props){
-    console.log("---------------------------------")
-    console.log(props);
+
     let badgeText;
     if (props.spotsAvailable === 0) badgeText = "SOLD OUT";
     else if (props.location === "Online") badgeText = "ONLINE";
