@@ -6,13 +6,14 @@ import './Meme.css'
 export default function Meme(){
     
     const [memeImage, setMemeImage] = React.useState();
+    let isGoingOut = true;
 
     function handleClick(){
         const memesArray = memesData.data.memes;
         const randomIndex = Math.floor(Math.random() * memesArray.length);
         const randomMemeUrl =  memesArray[randomIndex].url;
 
-        setMemeImage(image => randomMemeUrl)
+        setMemeImage(randomMemeUrl)
     }
 
     return (
