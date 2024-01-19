@@ -15,13 +15,10 @@ function App(){
         setCounter(content => content + 1)
     }
 
-    const isGoingOut = true
-    
-    let answer  // Use ternary here
-    if(isGoingOut === true) {
-        answer = "Yes"
-    } else {
-        answer = "No"
+    const [isGoingOut, setIsGoingOut] = React.useState("No")
+
+    function handleClick(){
+        setIsGoingOut( prevContent => prevContent === "Yes" ? "No" : "Yes")
     }
 
     return (
@@ -29,8 +26,8 @@ function App(){
             <Header />
             <div className="state">
                 <h1 className="state--title">Do I feel like going out tonight?</h1>
-                <div className="state--value">
-                    <h1>{answer}</h1>
+                <div onClick={handleClick} className="state--value">
+                    <h1>{isGoingOut}</h1>
                 </div>
             </div>
             {/* <MemeBox /> */}
