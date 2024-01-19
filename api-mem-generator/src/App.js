@@ -15,16 +15,23 @@ function App(){
         setCounter(content => content + 1)
     }
 
+    const isGoingOut = true
+    
+    let answer  // Use ternary here
+    if(isGoingOut === true) {
+        answer = "Yes"
+    } else {
+        answer = "No"
+    }
+
     return (
         <div>            
             <Header />
-
-            <div className="counter">
-                <button onClick={handleClickMinus} className="counter--minus">-</button>
-                <div className="counter--count">
-                    <h1>{counter}</h1>
+            <div className="state">
+                <h1 className="state--title">Do I feel like going out tonight?</h1>
+                <div className="state--value">
+                    <h1>{answer}</h1>
                 </div>
-                <button onClick={handleClickPlus}className="counter--plus">+</button>
             </div>
             {/* <MemeBox /> */}
         </div>
