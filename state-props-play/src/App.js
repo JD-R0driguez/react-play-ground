@@ -8,19 +8,13 @@ export default function App(){
 
     const [boxesArray, setBoxesArray] = React.useState(boxes) 
 
-
-    /**
-     * Challenge part 1:
-     * 1. Initialize state with the default value of the
-     *    array pulled in from boxes.js
-     * 2. Map over that state array and display each one
-     *    as an empty square (black border, transparent bg color)
-     *    (Don't worry about using the "on" property yet)
-     */
+    const boxArray = boxesArray.map(box => {
+        return <div className="box" id={box.id} state={box.on}></div>
+    })
 
     return (
         <div>
-            <h1>Hooollla</h1>
+            <h1>{[boxArray]}</h1>
         </div>
     )
 }
