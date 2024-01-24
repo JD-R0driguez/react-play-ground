@@ -9,17 +9,31 @@ export default function App(){
 
     const [boxesArray, setBoxesArray] = React.useState(boxes) 
 
+    function toggleBox(boxId) {
+        setBoxesArray(prevBoxes =>
+          // Map over the previous array to create a new array 
+          // with updated box states
+          prevBoxes.map(box =>
+            // Check if the current box has the same ID as the clicked box
+            // If yes, create a new box object with the state toggled
+            // If no, keep the current box object unchanged
+            box.id === boxId ? { ...box, on: !box.on } : box
+          )
+        )
+      }
+    
     const boxArray = boxesArray.map(box => {
-        return <Box id={box.id} state={box.on}/>
+        return <Box 
+                    key={box.id}
+                    boxId={box.id} 
+                    state={box.on}
+                    handleClick={toggleBox}
+                />
     })
-
-    // Challenge 4. Update the state of the arrays 
-    // from the App component instead of the Box component
-    // (to avoid code issues) use the setBoxesArray to achieve that.
-
+    
     return (
         <div>
-            <h1>{[boxArray]}</h1>
+            <h1>{boxArray}</h1>
         </div>
     )
 }

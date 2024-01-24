@@ -2,23 +2,14 @@ import React from 'react';
 
 function Box(props){
 
-    function handleClick(){
-        //Toggle the box when clicked
-        setBoxState(prevState => !prevState)
-    }
+    const colorBackground = props.state? "#222222": "transparent"; 
 
-    //State to manage te box's state (clicked / un-clicked)
-    const [boxState, setBoxState] = React.useState(props.state)
-
-    //Determine the back color based on the passed value from props
-    const colorBackground = boxState? "#222222": "transparent"; 
-    
     const styles = {
         backgroundColor: colorBackground
     }
 
     return (
-        <button className='button--box' onClick={handleClick}>
+        <button className='button--box'onClick={()=> props.handleClick(props.boxId)}>
             <div style={styles} className="box"></div>
         </button>
         
