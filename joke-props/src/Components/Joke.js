@@ -14,7 +14,7 @@ export default function Joke(props){
             <h3>{props.setup}</h3>
             {/* Added a conditional rendering  */}
             {isShown && <p>{props.punch}</p>}
-            <button onClick={toggleDisplay}>Show Punch Line</button>
+            <button onClick={toggleDisplay}>{isShown? "Hide":"Show" } Punch Line</button>
             <hr/>
         </div>
     )
