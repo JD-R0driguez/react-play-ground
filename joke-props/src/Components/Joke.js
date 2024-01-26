@@ -3,16 +3,18 @@ import './Joke.css'
 
 export default function Joke(props){
 
-    /**
-     * Challenge:
-     * - Create state `isShown` (boolean, default to `false`)
-     * - Add a button that toggles the value back and forth
-     */
+    const [isShown, setIsShown] = React.useState(false)
+    //Toggle function sets isShown using the set state value
+    function toggleDisplay(){
+        setIsShown(preState => !preState)
+    }
 
     return(
         <div className='text'>
             <h3>{props.setup}</h3>
-            <p>{props.punch}</p>
+            {/* Added a conditional rendering  */}
+            {isShown && <p>{props.punch}</p>}
+            <button onClick={toggleDisplay}>Show Punch Line</button>
             <hr/>
         </div>
     )
