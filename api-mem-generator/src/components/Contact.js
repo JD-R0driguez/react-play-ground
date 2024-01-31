@@ -1,4 +1,8 @@
 import React from "react"
+import image from './user.png'
+import emptyStar from './star-empty.png'
+import filledStar from './star-filled.png'
+
 import "./Contact.css"
 
 export default function App() {
@@ -10,7 +14,7 @@ export default function App() {
         isFavorite: false
     })
     
-    let starIcon = contact.isFavorite ? "star-filled.png" : "star-empty.png"
+    let starIcon = contact.isFavorite ? filledStar : emptyStar
     
     function toggleFavorite() {
         setContact(prevContact => {
@@ -21,10 +25,10 @@ export default function App() {
     return (
         <main>
             <article className="card">
-                <img src="./images/user.png" className="card--image" />
+                <img src={image} className="card--image" />
                 <div className="card--info">
                     <img 
-                        src={`../images/${starIcon}`} 
+                        src={starIcon} 
                         className="card--favorite"
                         onClick={toggleFavorite}
                     />

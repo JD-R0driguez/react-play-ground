@@ -1,7 +1,8 @@
 import React from "react";
+import Contact from './components/Contact'
 import Header from './components/Header'
 import MemeBox from './components/Meme'
-import './styles.css'
+
 
 function App(){
 
@@ -22,15 +23,10 @@ function App(){
     }
 
     return (
-        <div>            
-            <Header />
-            <div className="state">
-                <h1 className="state--title">Do I feel like going out tonight?</h1>
-                <div onClick={handleClick} className="state--value">
-                    <h1>{isGoingOut}</h1>
-                </div>
-            </div>
-            {/* <MemeBox /> */}
+        <div>    
+            <Contact />        
+            {/* <Header />
+            <MemeBox /> */}
         </div>
     )
 }

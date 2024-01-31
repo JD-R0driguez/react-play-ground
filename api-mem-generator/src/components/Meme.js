@@ -6,7 +6,6 @@ import './Meme.css'
 export default function Meme(){
     
     const [memeImage, setMemeImage] = React.useState();
-    let isGoingOut = true;
 
     function handleClick(){
         const memesArray = memesData.data.memes;
