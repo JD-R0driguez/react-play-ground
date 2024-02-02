@@ -90,4 +90,16 @@
     z-index: -1;
 }
 
+.motion-button.resume::before{
+    transition: all 0.9s ease;
+}
+
+.motion-button:hover::before {
+    transform: translateX(0);
+} 
+  
+.motion-button:hover {
+    transform: translateX(-4px);
+    color: white;
+}
 
