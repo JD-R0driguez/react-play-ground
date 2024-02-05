@@ -14,6 +14,17 @@
     gap:1rem;
 }
 
+.svg-container{
+    width: 2rem;
+}
+
+.svg-path {
+    transition: stroke 0.3s;
+}
+  
+.svg-container:hover .svg-path {
+    stroke: #FF5A5F;
+}
 
 .vertical-line {
     margin-top: 20px;
