@@ -10,11 +10,11 @@ export default function App() {
   return (
     <>
       <Navbar/>
-      {/* <LeftBar/>
+      <LeftBar/>
       <Hero/>
-      <About/>
-      <Work/>
-      <Contact/> */}
+      {/* <About/> */}
+      {/* <Work/> */}
+      {/* <Contact/> */}
     </>
   )
 }
