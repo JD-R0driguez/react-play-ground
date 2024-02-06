@@ -26,6 +26,14 @@
     stroke: #FF5A5F;
 }
 
+.svg-icon{
+    transition: transform 0.3s;
+}
+
+.svg-container:hover .svg-icon{
+    transform: translateY(-5px);
+}
+
 .vertical-line {
     margin-top: 20px;
     width: 1px;
