@@ -18,9 +18,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 1rem;
+    font-size: 1.3rem;
     font-weight: 500;
-    color: rgb(45, 44, 44);
+    color: #2d2c2c;
 }
 
 .nav-links ul{
