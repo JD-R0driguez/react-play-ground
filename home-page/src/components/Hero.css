@@ -28,8 +28,18 @@
     position: absolute;
     top:3rem;
     left: 12rem;
-    font-size: 40px;
 }
+
+.title-space{
+    display: flex;
+    gap: 2rem;
+}
+
+.title-third{
+    color:aqua;
+}
+
+
 
 
 
