@@ -29,6 +29,22 @@
     list-style-type: none;
 }
 
+.nav-links .about{
+    animation-delay: 0.1s;
+}
+
+.nav-links .projects{
+    animation-delay: 0.2s;
+}
+
+.nav-links .contact{
+    animation-delay: 0.3s;
+}
+
+.motion-button.resume{
+    animation-delay: 0.4s;
+}
+
 .header-anchor-tag{
     text-decoration: none;
     color: rgb(45, 44, 44);
