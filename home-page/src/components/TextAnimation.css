@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800&display=swap');
 
 .text-animation {
+  /* border: 1px solid #000; */
   font-size: 65px;
   font-family: 'Poppins', sans-serif;   
-  font-weight: 600;  
-  color: rgb(43, 37, 37);
+  font-weight: 600;
+  line-height: 1.2;  
+  color: rgba(73, 71, 71, 0.892);
   opacity: 0;
   animation: fadeIn 0.2s 0.4s;
   animation-fill-mode: forwards ;
@@ -13,8 +15,13 @@
 
 .letter {
   display: inline-block;
+  letter-spacing: -4px;
 }
 
 .space{
-  margin: 0px 5px;
+  margin: 0px 2px;
+}
+
+.theme-2{
+  color:#FF5A5F;
 }
