@@ -4,7 +4,6 @@
     position: relative;
     justify-content: flex-start;
     align-items: center;
-    border: 1px solid #000;
 }
 
 
@@ -30,9 +29,16 @@
 
 .hero-title{
     margin-left: 15rem;
-    border: 1px solid #000;
 }
 
+.hero-small{
+    margin-top: 1.5rem;
+    font-weight: 400;
+    font-size: 1.2rem;
+    color: rgba(73, 71, 71, 0.892);
+    animation-delay: 2s;
+    animation-duration: 1s;
+}
 
 
 
