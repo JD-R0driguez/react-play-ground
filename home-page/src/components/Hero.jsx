@@ -7,9 +7,9 @@ export default function Hero(){
         <div className="hero">
             <div className="back-image fade-img"></div>
             <section className="hero-title">
-                <TextAnimation text="Hi," />
-                <p className="title-space"><TextAnimation text="I'm" /><TextAnimation text="Juan" /></p>
-                <TextAnimation text="I build things for the web"/>
+                {/* <TextAnimation text="Hi" style="theme-1"/> */}
+                <TextAnimation text="Hi, I'm Juan" style="theme-1"/>
+                <TextAnimation text="I build things for the web" style="theme-2"/>
             </section>
         </div>
     )
