@@ -12,6 +12,8 @@
     overflow-x: hidden;
     padding-top: 60px;
     gap:1rem;
+    animation-delay: 2s;
+    animation-duration: 1s;
 }
 
 .svg-container{
@@ -33,8 +35,6 @@
 .svg-container:hover .svg-path {
     stroke: #FF5A5F;
 }
-
-
 
 .vertical-line {
     margin-top: 20px;

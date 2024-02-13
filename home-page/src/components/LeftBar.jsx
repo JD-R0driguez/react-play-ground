@@ -1,10 +1,11 @@
 import React from "react";
+import 'animate.css';
 import './LeftBar.css'
 
 
 export default function LeftBar(){
     return (
-        <div className="left-bar">
+        <div className="left-bar animate__animated animate__fadeIn">
             <div className="svg-container git-hub">
                 <a href="https://github.com/JD-R0driguez">
                     <svg viewBox="0 0 192 192" xmlns="http://www.w3.org/2000/svg" fill="none" class="svg-icon">
