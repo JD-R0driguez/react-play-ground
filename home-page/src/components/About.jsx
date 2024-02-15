@@ -26,7 +26,7 @@ export default function About(){
                     </p>
                 </div>
                 <did className="image-container">
-                    <img src={aboutImage} alt=""/>
+                    <img src={aboutImage} alt="man meditation in a cold place with different coffee drinks"/>
                 </did>
             </div>
 
