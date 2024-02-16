@@ -9,7 +9,7 @@ export default function About(){
                 <h4>Get To Know More</h4>
                 <h1>About me</h1>
             </div>
-            <div className="about-sections">
+            <div className="about-split">
                 <div className="about-text">
                     <p>
                         <span className="about-text-color">Hi there!</span> I am Juan and I enjoy creating things that live on the internet.
