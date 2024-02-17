@@ -1,6 +1,7 @@
 
 section.about{
     margin-top: 3rem;
+    margin-bottom: 3rem;
     min-height: 700px;
     width: 100%;
     display: flex;
@@ -11,7 +12,6 @@ section.about{
 
 .about-title{
     margin-top: 3rem;
-    margin-bottom: 6rem;
     text-align: center;
     color: #2d2c2c;
 }
@@ -28,19 +28,23 @@ section.about{
 }
 
 .about-split{
-    max-width: 60%;
+    margin-top: 0px;
+    max-width: 65%;
     min-height: 600px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    gap: 4rem;
-    margin-bottom: 4rem;
+    gap: 5rem;
 }
 
 .about-text, .image-container{
     display: flex;
     flex: 1;
     justify-content: center;
+}
+
+.about-text{
+    flex: 2;
 }
 
 .about-text {
@@ -53,7 +57,7 @@ section.about{
 .about-text p{
     font-size: 1.1rem;
     margin-bottom: 1rem;
-    text-align: left;
+    text-align:left;
 }
 
 .about-text-color{
@@ -61,12 +65,78 @@ section.about{
     color: #FF5A5F;
 }
 
-.image-container img{
+.image-container{
     display: flex;
-    flex: 1;
-    max-width: 400px;
-    object-fit: cover;
-    border-radius: 15px;
-    border: 3px solid #ffffff;
-    box-shadow: 20px -20px #FF5A5F;
+    justify-content: flex-start;
+}
+
+.cube-spinner{
+    margin-top: 70%;
+    animation: spine-cube;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 10s;
+    transform-style: preserve-3d;
+    transform-origin: 100px 100px 0;
+    margin-left: calc(50% - 100px);
+    
+    div {
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        border: 5px solid #ff5a60;
+        border-radius: 8px;
+        background: #ff5a60bb;
+        text-align: center;
+        font-size: 120px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .face-1 {
+        transform: translateZ(100px);
+        color: white;
+    }
+    .face-2 {
+        transform: rotateY(90deg) translateZ(100px);
+        color: white;
+    }
+    .face-3 {
+        transform: rotateY(90deg) rotateX(90deg) translateZ(100px);
+        color: white;
+    }
+    .face-4 {
+        transform: rotateY(180deg) rotateZ(90deg) translateZ(100px);
+        color: white    }
+    .face-5 {
+        transform: rotateY(-90deg) rotateZ(90deg) translateZ(100px);
+        color: white    }
+    .face-6 {
+        transform: rotateX(-90deg) translateZ(100px);
+        color: white;
+    }
+}
+
+@keyframes spine-cube {
+    from,
+    to{
+        transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+    }
+    16%{
+        transform: rotateY(-90deg);
+    }
+    33%{
+        transform: rotateY(-90deg) rotateZ(90deg);
+    }
+    50%{
+        transform: rotateY(-180deg) rotateZ(90deg);
+    }
+    66%{
+        transform: rotateY(-270deg) rotateZ(90deg);
+    }
+    83%{
+        transform: rotateX(90deg);
+    }
 }
