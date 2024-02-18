@@ -9,7 +9,7 @@ export default function About(){
         <section className="about">
             <div className="about-title">
                 <h4>Get To Know More</h4>
-                <h1>About me</h1>
+                <h1>About Me</h1>
             </div>
             <div className="about-split">
                 <div className="about-text">
