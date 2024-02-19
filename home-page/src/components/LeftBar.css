@@ -21,11 +21,11 @@
 }
 
 .svg-icon{
-    transition: transform 0.15s;
+    transition: all 0.3s ease-in-out;
 }
 
 .svg-container:hover .svg-icon{
-    transform: translateY(-5px);
+    transform: translateY(-4px) translateX(-2px);
 }
 
 .svg-path {
