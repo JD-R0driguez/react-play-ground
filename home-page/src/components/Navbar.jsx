@@ -21,7 +21,7 @@ export default function Navbar(){
                         <a className="header-anchor-tag" href="">Contact</a>
                     </li>
                 </ul>
-                <button className="motion-button resume animate__animated animate__fadeInDown">Resume</button>
+                <button className="motion-button animate__animated animate__fadeInDown">Resume</button>
             </div>
         </nav>
     )

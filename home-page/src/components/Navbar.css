@@ -49,18 +49,33 @@
     color: #484848;
     font: inherit;
     display: inline-block;
-    transition: color 0.15s, transform 0.3s;
+    transition: all 0.2s ease-in-out;
 }
 
 .header-anchor-tag:hover {
     color: #FF5A5F;
-    transform: translateY(-7px);
+    transform: translateY(-5px);
+}
+
+.nav-links button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.2rem;
+    border-radius: 10em;
+    font-size: 15px;
+    font-weight: 400;
+    padding: 0.4rem 1rem;
+    border: 2px solid #484848;
+    color: #484848;
+    background-color: white;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
 }
 
 .motion-button {
     margin-left: 2.5rem;
     background-color: transparent;
-    /* color: rgb(45, 44, 44); */
     color: #484848;
     font-size: 1rem;
     font-weight: 500;
@@ -87,10 +102,6 @@
 
 }
 
-.motion-button.resume{
-    border-radius: 2px;
-}
-
 .motion-button::before {
     content: "";
     position: absolute;
@@ -100,12 +111,8 @@
     height: 100%;
     background-color: #484848;
     transform: translateX(-100%);
-    transition: all 0.7s ease;
+    transition: all 0.7s ease-in-out;
     z-index: -1;
-}
-
-.motion-button.resume::before{
-    transition: all 0.9s ease;
 }
 
 .motion-button:hover::before {
@@ -113,7 +120,7 @@
 } 
   
 .motion-button:hover {
-    transform: translateX(-4px);
+    transform: translateX(-3px) translateY(-3px);
     color: white;
 }
 
