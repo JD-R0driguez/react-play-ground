@@ -121,6 +121,10 @@ section.projects{
     gap: 1rem;
 }
 
+.links a{
+    text-decoration: none;
+}
+
 .links button{
     display: flex;
     justify-content: center;
