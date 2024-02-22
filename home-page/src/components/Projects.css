@@ -1,5 +1,5 @@
 section.projects{
-    margin-top: 3rem;
+    margin-top: 7rem;
     margin-bottom: 3rem;
     min-height: 700px;
     width: 100%;
@@ -43,7 +43,7 @@ section.projects{
     width: 100%;
     position: relative;
     z-index: 1;
-    margin-bottom: 3rem;
+    margin-bottom: 5rem;
 }
 
 .project-container.left{
