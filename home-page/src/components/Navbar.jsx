@@ -15,11 +15,15 @@ export default function Navbar(){
         scrollToSection(sectionID);
     }
 
+    const goToPage = () => {
+        window.location.href = '.';
+    };
+
     return (
         <nav id="home" className="nav-bar">
             <div>
-                <div className="logo-image">
-                    <button onClick={()=> scrollToSection('home')} className="motion-button logo animate__animated animate__fadeIn">JR</button>
+                <div className="logo-image">                
+                    <button onClick={goToPage} className="motion-button logo animate__animated animate__fadeIn">JR</button>
                 </div>
             </div>
             <div className="nav-links">
