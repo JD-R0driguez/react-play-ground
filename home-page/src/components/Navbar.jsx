@@ -4,6 +4,18 @@ import './Navbar.css'
 
 
 export default function Navbar(){
+
+    const scrollToSection = (sectionId) => {
+        const section = document.getElementById(sectionId);
+        section.scrollIntoView({ behavior: 'smooth', block: 'start'});
+    };
+
+    const handleClick = (sectionID, event)=>{
+        event.preventDefault();
+        scrollToSection(sectionID);
+    }
+
+
     return (
         <nav className="nav-bar">
             <div className="logo-image">
@@ -12,13 +24,13 @@ export default function Navbar(){
             <div className="nav-links">
                 <ul>
                     <li className="about animate__animated animate__fadeInDown">
-                        <a className="header-anchor-tag" href="">About</a>
+                        <a onClick={(e) => handleClick('about', e)} className="header-anchor-tag" href="">About</a>
                     </li>
                     <li className="projects animate__animated animate__fadeInDown">
-                        <a className="header-anchor-tag" href="">Projects</a>
+                        <a onClick={(e) => handleClick('projects', e)} className="header-anchor-tag" href="">Projects</a>
                     </li>
                     <li className="contact about animate__animated animate__fadeInDown">
-                        <a className="header-anchor-tag" href="">Contact</a>
+                        <a onClick={(e) => handleClick('contact', e)} className="header-anchor-tag" href="">Contact</a>
                     </li>
                 </ul>
                 <button className="motion-button resume animate__animated animate__fadeInDown">Resume</button>

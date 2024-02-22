@@ -9,7 +9,7 @@ import './Projects.css'
 
 export default function Projects() {
     return (
-        <section className="projects">
+        <section id="projects" className="projects">
             <div className="projects-title">
                 <h4>Check Out Some</h4>
                 <h1>Projects I've Built</h1>

@@ -1,12 +1,11 @@
 import React from "react";
-// import aboutImage from '../assets/about.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faReact, faCss3, faHtml5, faJsSquare, faGithub, faPython } from '@fortawesome/free-brands-svg-icons'
 import './About.css'
 
 export default function About(){
     return (
-        <section className="about">
+        <section id="about" className="about">
             <div className="about-title">
                 <h4>Get To Know More</h4>
                 <h1>About Me</h1>
