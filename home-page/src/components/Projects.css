@@ -8,7 +8,6 @@ section.projects{
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    border: 1px solid #000;
 }
 
 .projects-title{

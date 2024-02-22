@@ -15,11 +15,12 @@ export default function Navbar(){
         scrollToSection(sectionID);
     }
 
-
     return (
-        <nav className="nav-bar">
-            <div className="logo-image">
-                <button className="motion-button logo animate__animated animate__fadeIn">JR</button>
+        <nav id="home" className="nav-bar">
+            <div>
+                <div className="logo-image">
+                    <button onClick={()=> scrollToSection('home')} className="motion-button logo animate__animated animate__fadeIn">JR</button>
+                </div>
             </div>
             <div className="nav-links">
                 <ul>
