@@ -12,10 +12,12 @@
     justify-content: space-between;
     align-items: center;
     padding: 2.5rem 4rem 1.6rem 1.2rem;
+    height: 30px;
 }
 
 .nav-bar .logo-image{
     position: fixed;
+    z-index: 2;
 }
 
 .nav-links {
