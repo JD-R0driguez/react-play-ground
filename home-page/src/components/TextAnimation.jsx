@@ -7,7 +7,7 @@ export default function TextAnimation(props) {
     const lettersArray = props.text.split('').map((char, index) => {
 
         const charType = char === ' ' ? "space" : "letter";
-        return (<span key={index} className={`${charType} ${props.style} animate__animated animate__bounceInDown`} style={{ animationDelay: `${index * 0.05 + 0.5}s` }}>
+        return (<span key={index} className={`${charType} ${props.style} animate__animated animate__bounceIn`} style={{ animationDelay: `${index * 0.05 + 0.9}s` }}>
             {char}
         </span>
         )
