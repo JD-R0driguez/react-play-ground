@@ -38,7 +38,7 @@ export default function Navbar(){
                         <a onClick={(e) => handleClick('contact', e)} className="header-anchor-tag" href="">Contact</a>
                     </li>
                 </ul>
-                <button className="motion-button resume animate__animated animate__fadeInDown">Resume</button>
+                <a href="https://jd-r0driguez.github.io/resume/Juan%20D%20Rodriguez.pdf" className="header-button-resume" target="_blank"><button className="motion-button resume animate__animated animate__fadeInDown">Resume</button></a>
             </div>
         </nav>
     )

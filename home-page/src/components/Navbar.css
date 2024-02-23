@@ -57,6 +57,9 @@
     display: inline-block;
     transition: all 0.2s ease-in-out;
 }
+.header-button-resume{
+    text-decoration: none;
+}
 
 .header-anchor-tag:hover {
     color: #FF5A5F;
