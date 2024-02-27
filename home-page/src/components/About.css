@@ -12,6 +12,7 @@ section.about{
 
 .about-title{
     margin-top: 3rem;
+    margin-bottom: 3rem;
     text-align: center;
     color: #2d2c2c;
 }
@@ -32,9 +33,8 @@ section.about{
     max-width: 65%;
     min-height: 600px;
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
-    gap: 5rem;
+    gap: 10rem;
 }
 
 .about-text, .image-container{
@@ -139,4 +139,33 @@ section.about{
     83%{
         transform: rotateX(90deg);
     }
+}
+
+
+@media only screen and (max-width: 1100px) {
+    .about-text p{
+        font-size: 1rem;
+    }
+}
+
+
+@media only screen and (max-width: 900px) {
+    section.about{
+        background-color: #ff5a6017;
+    }
+    .about-split{
+        margin-left: 2rem;
+        flex-direction: column-reverse;
+    }
+    .cube-spinner{
+        margin-top: 2rem;
+        margin-bottom: 8rem;
+    }
+}
+
+
+@media only screen and (max-width: 650px) {
+    section.about{
+        background-color: #ff5a6017;
+    }    
 }

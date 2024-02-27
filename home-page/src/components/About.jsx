@@ -23,7 +23,7 @@ export default function About(){
                         implementing eye pleasing designs and making them come to life with animation is what I do best.
                     </p>
                     <p>
-                        <span className="about-text-color">Here</span> are some of the technologies I am familiar with: 
+                        <span className="about-text-color">Here</span> are some of the technologies I am familiar with.
                     </p>
                 </div>
                 <did className="image-container">
