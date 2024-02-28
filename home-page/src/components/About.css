@@ -146,6 +146,9 @@ section.about{
     .about-text p{
         font-size: 1rem;
     }
+    .about-split{
+        margin-top: 3rem;
+    }
 }
 
 
@@ -154,18 +157,13 @@ section.about{
         background-color: #ff5a6017;
     }
     .about-split{
+        margin-top: 3rem;
         margin-left: 2rem;
-        flex-direction: column-reverse;
+        flex-direction: column;
     }
     .cube-spinner{
-        margin-top: 2rem;
-        margin-bottom: 8rem;
+        margin-top: -6rem;
+        margin-bottom: 18rem;
     }
 }
 
-
-@media only screen and (max-width: 650px) {
-    section.about{
-        background-color: #ff5a6017;
-    }    
-}
