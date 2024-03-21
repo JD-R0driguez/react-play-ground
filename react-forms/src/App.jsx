@@ -1,4 +1,5 @@
 import React from "react"
+import './styles.css'
 
 export default function App() {
     
@@ -28,20 +29,20 @@ export default function App() {
                 <input 
                     type="email" 
                     placeholder="Email address"
-                    className="form--input"
+                    className="form-input"
                 />
                 <input 
                     type="password" 
                     placeholder="Password"
-                    className="form--input"
+                    className="form-input"
                 />
                 <input 
                     type="password" 
                     placeholder="Confirm password"
-                    className="form--input"
+                    className="form-input"
                 />
                 
-                <div className="form--marketing">
+                <div className="form-marketing">
                     <input
                         id="okayToEmail"
                         type="checkbox"
@@ -50,7 +51,7 @@ export default function App() {
                     <label htmlFor="okayToEmail">I want to join the newsletter</label>
                 </div>
                 <button 
-                    className="form--submit"
+                    className="form-submit"
                 >
                     Sign up
                 </button>
