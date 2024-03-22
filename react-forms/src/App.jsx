@@ -22,15 +22,15 @@ export default function App() {
     
     function handleSubmit(event) {
         event.preventDefault()
-        let message = ""
-        const doPasswordMatch = formData.password === formData.passwordCheck ? true : false
-        if (doPasswordMatch) {
-            message = "Successfully signed up!"
-            const newsMessage = formData.joinNewsLetter ? "Thanks for signing up for our newsletter!" : ""  
-            message =  message + " " + newsMessage     
-        }else message = "Passwords do not match"
-        
-        console.log(message)
+        if(formData.password === formData.passwordCheck) {
+            console.log("Successfully signed up")
+        } else {
+            console.log("Passwords do not match")
+            return 
+        }
+        if(formData.joinNewsLetter) {
+            console.log("Thanks for signing up for our newsletter!")
+        }
     }
     
     return (
