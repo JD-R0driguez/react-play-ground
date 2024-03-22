@@ -2,25 +2,35 @@ import React from "react"
 import './styles.css'
 
 export default function App() {
+
+    const [formData, setFormData] = React.useState({
+        email: "",
+        password: "",
+        passwordCheck: "",
+        joinNewsLetter: true
+
+    })
     
-    /**
-     * To do
-     * 
-     * 1. Create a state object to store the 4 values we need to save.
-     * 2. Create a single handleChange function that can
-     *    manage the state of all the inputs and set it up
-     *    correctly
-     * 3. When the user clicks "Sign up", check if the 
-     *    password & confirmation match each other. If
-     *    so, log "Successfully signed up" to the console.
-     *    If not, log "passwords to not match" to the console.
-     * 4. Also when submitting the form, if the person checked
-     *    the "newsletter" checkbox, log "Thanks for signing
-     *    up for our newsletter!" to the console.
-     */
+    function handleChange(event){
+        const {name, value, type, checked} = event.target
+        setFormData(prevData => ({
+            ...prevData,
+            [name]: type === "checkbox" ? checked : value
+        }))
+    }
+
     
     function handleSubmit(event) {
         event.preventDefault()
+        let message = ""
+        const doPasswordMatch = formData.password === formData.passwordCheck ? true : false
+        if (doPasswordMatch) {
+            message = "Successfully signed up!"
+            const newsMessage = formData.joinNewsLetter ? "Thanks for signing up for our newsletter!" : ""  
+            message =  message + " " + newsMessage     
+        }else message = "Passwords do not match"
+        
+        console.log(message)
     }
     
     return (
@@ -30,22 +40,34 @@ export default function App() {
                     type="email" 
                     placeholder="Email address"
                     className="form-input"
+                    name="email"
+                    onChange={handleChange}
+                    value={formData.email}
                 />
                 <input 
                     type="password" 
                     placeholder="Password"
                     className="form-input"
+                    name="password"
+                    onChange={handleChange}
+                    value={formData.password}
                 />
                 <input 
                     type="password" 
                     placeholder="Confirm password"
                     className="form-input"
+                    name="passwordCheck"
+                    onChange={handleChange}
+                    value={formData.passwordCheck}
                 />
                 
                 <div className="form-marketing">
                     <input
                         id="okayToEmail"
                         type="checkbox"
+                        name="joinNewsLetter"
+                        onChange={handleChange}
+                        checked={formData.joinNewsLetter}
                         
                     />
                     <label htmlFor="okayToEmail">I want to join the newsletter</label>
