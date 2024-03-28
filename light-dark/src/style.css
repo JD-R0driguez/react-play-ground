@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
 
+
 * {
     box-sizing: border-box;
     font-family: 'Inter', sans-serif; 
@@ -63,7 +64,7 @@ nav.dark {
     width: 25px;
     height: 13px;
     background-color: #2B283A;
-    border-radius: 2rem;
+    border-radius: 2px;
     margin-inline: 7px;
     cursor: pointer;
     display: flex;
@@ -79,10 +80,10 @@ nav.dark .toggler--slider {
 }
 
 .toggler--slider--circle {
-    height: 13px;
-    width: 13px;
+    height: 12px;
+    width: 12px;
     background-color: white;
-    border-radius: 50%;
+    border-radius: 20%;
 }
 
 nav.dark .toggler--slider--circle {
