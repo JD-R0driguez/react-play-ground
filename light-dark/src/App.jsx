@@ -4,21 +4,21 @@ import Main from "./components/Main"
 
 export default function App() {
 
-    const [colorMode, setColorMode] = React.useState("")
+    const [isDarkMode, setIsDarkMode] = React.useState(false)
 
     const colorToggle = () => {
-        setColorMode(prevMode => (
-            prevMode === "" ? "dark" : ""
+        setIsDarkMode(prevMode => (
+            prevMode? "" : "dark"
         ))
     }
 
     return (
         <div className="container">
             <Navbar 
-                darkMode={colorMode}
+                darkMode={isDarkMode}
                 toggleDarkMode={colorToggle}
             />
-            <Main darkMode={colorMode}/>
+            <Main darkMode={isDarkMode}/>
         </div>
     )
 }
