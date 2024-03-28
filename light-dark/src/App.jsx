@@ -7,9 +7,7 @@ export default function App() {
     const [isDarkMode, setIsDarkMode] = React.useState(false)
 
     const colorToggle = () => {
-        setIsDarkMode(prevMode => (
-            prevMode? "" : "dark"
-        ))
+        setIsDarkMode(prevMode => !prevMode)
     }
 
     return (
