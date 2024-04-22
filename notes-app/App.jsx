@@ -1,11 +1,15 @@
 import React from "react"
-import Sidebar from "./components/Sidebar"
-import Editor from "./components/Editor"
 import Split from "react-split"
 import { nanoid } from "nanoid"
+import './Styles.css'
 
 export default function App() {
     return(
-        <div>Set Up</div>
+    <Split
+        className="split"
+    >
+        <div>Left</div>
+        <div>Right</div>
+    </Split>
     )
 }
